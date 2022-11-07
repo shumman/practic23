@@ -1,4 +1,4 @@
-console.log('hhhhhello')
+console.log('hhhhhdddddeedeseseeello')
 function register(){
     document.getElementById('Submit').innerText="Create Username"
     document.getElementById('register').innerText='Back To Login';
