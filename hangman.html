@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="hangman.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HangMan Game</title>
+    <link rel="stylesheet" href="hangman.css">
+</head>
+<body>
+    <div id="container">
+        <canvas width="640%" height="480%"></canvas>
+        <div id="inside">
+            <label for="word" class='both' id="wordlabel">Word:</label>
+            <pre class="word" class="both"></pre>
+            <br>
+            <label id="label" class="both1" for="input">Enter the letter you're guessing:</label>
+            <input id="input" class="both1"type="text" autocomplete="off" maxlength="1" onkeydown="check(event)"><br>
+            <p id="alreadyused" class="both1"><br></p>
+            <label id="usedwords" class="both1" for="">Used Letters:</label>
+            <pre class="word both1"></pre>
+        </div>
+        <div id="loginC">
+            <div id="loginContainer">
+                <label for="Username">Enter Username:  </label>
+                <input onkeydown="key(event)" id="Username" autocomplete="off" type="text" placeholder="e.g haseeb123">
+                <button id="Submit" onclick="login()">Log In</button>
+                <p id="alert"></p>
+                <br>
+                <button id="register" onclick="register()">Not registered??</button>
+            </div>
+        </div>
+        <div id="wonorlost">
+            <h1 id="header"></h1>
+            <label id="chosen" for=""></label>
+            <label id="wins" for=""></label>
+            <label id="losses" for=""></label>
+            <label id="totalgames" for=""></label>
+            <button id="nextround" onclick="round()">Next Round</button>
+        </div>
+    </div>
+<script src="hangman.js"></script>
+</body>
+</html>
