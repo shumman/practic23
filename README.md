@@ -1,1 +1,1 @@
-# practic
+# Hangman
